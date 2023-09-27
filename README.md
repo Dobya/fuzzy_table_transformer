@@ -45,7 +45,7 @@ pip install -r requirements.txt
 You can use the `convert_table.py` script as follows:
 
 ```bash
-usage: convert_table.py [-h] -s SOURCE -t TEMPLATE [-o TARGET] [--separator SEPARATOR]
+usage: convert_table.py [-h] -s SOURCE -t TEMPLATE [-o TARGET] [--separator SEPARATOR] [--depth DEPTH]
 ```
 
 ### Options:
@@ -64,3 +64,6 @@ usage: convert_table.py [-h] -s SOURCE -t TEMPLATE [-o TARGET] [--separator SEPA
 
 - `--separator SEPARATOR`  
   Separator used in the CSV files. Default is a comma `,`.
+
+- `--d DEPTH, --depth DEPTH`  
+  Count of sample values from table to use for a type inference. Default: 5
